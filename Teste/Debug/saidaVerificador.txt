@@ -1,0 +1,47 @@
+
+
+LES - Laboratório de Engenharia de Software DI/PUC-Rio
+      Arcabouço de teste de módulos C  (c) 2006
+
+---------------------------------------------
+      Construto sob teste: TRAB4-1.exe
+
+      Arquivo de teste:    TesteVerificador.script
+
+
+!!!    0  Linha:     1  // Script:    TesteLista.script 
+!!!    0  Linha:     2  // Autor:     Arndt von Staa 
+!!!    0  Linha:     3  // Data:      02/abr/2008 
+!!!    0  Linha:     4  // Propósito: Testar superficialmente o módulo lista genérica duplamente encadeada 
+!!!    0  Linha:     5  // 
+    7  == Inicializar valores
+   31  == Criar a lista 0
+   35  == Verificar ObterValor relativo a lista vazia
+   39  == Inserir elemento em lista vazia
+   45  == Inserir elemento após primeiro
+   51  == Inserir elemento antes do último
+   57  == Excluir elemento do meio
+   62  == Excluir elemento do início
+   67  == Excluir elemento final, único
+   72  == Ver se a lista ficou vazia
+   76  == Destruir a lista
+   79  == Criar uma lista com dois elementos
+   85  == Esvaziar a lista e ver se ficou vazia
+   90  == Destruir a lista
+   93  == Criar uma lista com quatro elementos
+  101  == Verificar a lista de trás para diante
+  114  == Verificar a lista de frente para trás
+  127  == Verificar a lista andando demais de trás para diante
+  132  == Verificar a lista andando demais de frente para trás
+  137  == Destruir a lista
+!!!    0  Linha:   144  // fim 
+
+!!! Número de linhas lidas:         144
+!!! Número de casos de teste:        20
+!!! Número comandos corretos:        92
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

@@ -1,0 +1,160 @@
+// Script:    TesteDeturpador.script
+// Autor:     Gabriel de Souza Heffer, Yuri Strack
+// Data:      01/07/2019
+// Propósito: Testar deturpador do módulo lista genérica duplamente encadeada
+//
+
+== Inicializar valores
+=declararparm   lista0  int 0
+=declararparm   lista1  int 1
+=declararparm   lista2  int 2
+=declararparm   lista3  int 3
+=declararparm   lista4  int 4
+=declararparm   lista5  int 5
+=declararparm   lista6  int 6
+=declararparm   lista7  int 7
+=declararparm   lista8  int 8
+=declararparm   lista9  int 9
+
+=declararparm   str0    string  "abcdefg"
+=declararparm   str1    string  "qwerty"
+=declararparm   str2    string  "xxx"
+=declararparm   str3    string  "xpto"
+
+=declararparm   OK             int  0
+=declararparm   ListaVazia     int  1
+=declararparm   FimLista       int  2
+=declararparm   NaoAchou       int  3
+=declararparm   FaltouMemoria  int  4
+
+=declararparm   pNULL          int  0
+=declararparm   pNaoNULL       int  1
+
+=inicializarcontadores "."
+=lercontadores "Contadores.def"
+=registraracumulador "contadoresDeturpador.count"
+=iniciarcontagem
+
+== Criar a lista 0
+=criarlista      lista0 
+=verificar lista0 0
+
+== Verificar ObterValor relativo a lista vazia
+=obtervalorelem  lista0   "???"     pNULL
+
+== Inserir elemento em lista vazia. Deturpar 1 ( liberando elemento corrente ). Total de erros esperados: 3
+=inselemantes    lista0   str0   OK
+=obtervalorelem  lista0   str0   pNaoNULL
+=deturpar lista0 1
+=verificar lista0 3
+=AceitaFalhasAcumuladas 3
+
+== Inserir elemento após primeiro. Deturpar 3 ( ponteiro para anterior no nó corrente passa a ser nulo ). Total de erros esperado: 2
+=criarlista      lista1
+=inselemantes    lista1   str0   OK
+=inselemapos     lista1   str1   OK
+=obtervalorelem  lista1   str1   pNaoNULL
+=deturpar 	 lista1   3
+=verificar       lista1   2
+=AceitaFalhasAcumuladas 2
+
+== Inserir elemento antes do primeiro. Deturpar 2 ( ponteiro para o próximo no nó corrente passa a ser nulo ). Total de erros: 2
+=criarlista      lista2
+=inselemantes    lista2   str0   OK
+=inselemantes    lista2   str1   OK
+=obtervalorelem  lista2   str1   pNaoNULL
+=deturpar 	 lista2   2
+=verificar       lista2   3
+=AceitaFalhasAcumuladas 3
+
+== Deturpa 6 e 7(atribui nulo ao ponteiro do valor do elemento e no tipo do elemento).
+=criarlista      lista3
+=inselemantes    lista3   str0   OK
+=obtervalorelem  lista3   str0   pNaoNULL
+=deturpar 	 lista3   6
+=deturpar	 lista3   7
+=verificar       lista3   2
+=AceitaFalhasAcumuladas 2
+=destruirlista lista3
+
+== Deturpa 8(desencadeia elemento corrente).
+=criarlista      lista3
+=inselemantes    lista3   str0   OK
+=inselemantes    lista3   str0   OK
+=inselemapos     lista3   str1   OK
+=deturpar 	 lista3   8
+=verificar       lista3   1
+=AceitaFalhasAcumuladas 1
+
+== Deturpa 9(Ponteiro para elemento corrente eh nulo).
+=criarlista      lista4
+=inselemantes    lista4   str0   OK
+=deturpar 	 lista4   9
+=verificar       lista4   1
+=AceitaFalhasAcumuladas 1
+=destruirlista lista4
+
+== Deturpa 10(Ponteiro para origem eh nulo).
+=criarlista      lista4
+=inselemantes    lista4   str0   OK
+=deturpar 	 lista4   9
+=verificar       lista4   1
+=AceitaFalhasAcumuladas 1
+
+== Deturpa 4(atribui lixo ao proximo elemento).
+=criarlista      lista5
+=inselemantes    lista5   str0   OK
+=inselemantes    lista5   str0   OK
+=inselemapos     lista5   str1   OK
+=deturpar 	 lista5   4
+=verificar       lista5   2
+=AceitaFalhasAcumuladas 2
+
+== Deturpa 5(atribui lixo ao elemento anterior).
+=criarlista      lista6
+=inselemantes    lista6   str0   OK
+=inselemantes    lista6   str0   OK
+=inselemapos     lista6   str1   OK
+=deturpar 	 lista6   5
+=verificar       lista6   3
+=AceitaFalhasAcumuladas 3
+
+== Deturpa 10 com 2 elementos (atribui nulo a ponteiro da origem)
+=criarlista      lista8
+=inselemantes    lista8   str0   OK
+=inselemantes    lista8   str0   OK
+=deturpar        lista8   10
+=verificar       lista8   1
+=AceitaFalhasAcumuladas 1
+
+== Deturpa 12 (atribui nulo a ponteiro do final da lista)
+=criarlista      lista9
+=inselemantes    lista9   str0   OK
+=inselemantes    lista9   str0   OK
+=deturpar        lista9   12
+=verificar       lista9   1
+=AceitaFalhasAcumuladas 1
+
+== Deturpa 13 14 e 15 (atribui lixo ao ponteiro da Origem, Final e Corrente)
+=deturpar        lista8   13
+=deturpar        lista8   14
+=deturpar        lista8   15
+=verificar       lista8   6
+=AceitaFalhasAcumuladas   6
+
+== Deturpa 11 (muda tipo do elemento do nó corrente)
+=criarlista      lista7
+=inselemantes    lista7   str0   OK
+=deturpar        lista7   11
+=verificar       lista7   1
+=AceitaFalhasAcumuladas 1
+
+
+=pararcontagem
+
+=gravarcontadores "contadoresDeturpador.count"
+=terminarcontadores
+
+
+
+// fim

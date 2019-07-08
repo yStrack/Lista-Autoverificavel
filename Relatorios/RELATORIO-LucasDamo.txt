@@ -1,0 +1,14 @@
+**************  FORMATO *************
+dd = dia com 2 caracteres
+mm = mes com 2 caracteres
+yyyy = ano com 4 caracteres
+HH = horas com 2 caracteres
+MM = minutos com 2 caracteres
+"" = texto qualquer
+
+Data, 			Horas Trabalhadas, Tipo Tarefa, 		Descrição da Tarefa Realizada
+dd/mm/yyyy     ,	HH:MM,		   "", 				""
+************** /FORMATO *************
+30/06/2019     ,	01:30,		   "Estudar",			"Estudar os módulos CESPDIN"
+01/07/2019     ,	04:00,		   "Redigir script de teste",	"Fazer os scripts de teste para o depurador"
+01/07/2019     ,	01:00,		   "Estudar",			"Fazer questão da lista"

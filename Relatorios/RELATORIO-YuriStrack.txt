@@ -1,0 +1,12 @@
+﻿Dia     Tempo     Tipo Tarefa             Descrição
+
+27/06   0h:30m    estudando               Estudando funcionamento do módulo CESPDIN.
+28/06   0h:30m    estudando               Estudando enunciado do trabalho e funcionamento do módulo CESPDIN e CONTA.
+28/06   1h:00m    codificacao             Adicionando atributos a estrutura da LISTA para ficar autoverificavel.
+28/06   3h:00m    codificacao             Inicio do desenvolvimento da funcao de verificação.
+28/06   4h:00m    codificacao             Desenvolvimento da funcao de deturpar e de verificar.
+29/06   2h:45m    codificacao             Termino da funcao de verificar.
+30/06   4h:00m    redigir script de teste Redigir script de teste do módulo Lista( Verificador ) e realizar teste.
+01/07   2h:00m    estudar                 Fazendo exercícios da lista.
+01/07   4h:00m    redigir script de teste Fazendo script de depurador.
+03/07   3h:30m    diagnosticar e corrigir Corrigimos erros no verificador e Deturpador. Fizemos a documentação do comandos de teste.

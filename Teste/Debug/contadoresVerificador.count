@@ -1,0 +1,29 @@
+//////////////////////////////////////////////////////////////////////
+// Contadores acumulados, gerado: 2019/07/03-20:32:31
+//////////////////////////////////////////////////////////////////////
+
+CORR_APONTA_CAB_NULO\=0
+CORR_LIXO\=0
+CORR_NULO_LIS_NAO_VAZIA\=0
+ELEM_NULO\=0
+ELEM_TIPO_ERRADO\=0
+ERRO_ESTR_LIS1\=0
+ERRO_ESTR_LIS2\=0
+ERRO_ESTR_LIS3\=0
+ERRO_ESTR_LIS4\=0
+FIM_APONTA_CAB_NULO\=0
+FIM_LIXO\=0
+FIM_NULO_LIS_NAO_VAZIA\=0
+LIS_VAZIA_COM_ELEM_NAONULO\=0
+NUMERO_ELEM_ERRADO\=0
+ORIG_APONTA_CAB_NULO\=0
+ORIG_LIXO\=0
+SUCESSO\=23
+TIPO_ELEM_DIF_TIPO_LISTA\=0
+TIPO_ELEM_LIXO\=0
+VALOR__ELEM_NAO_NULO\=53
+VALOR__ELEM_NULO\=0
+
+//////////////////////////////////////////////////////////////////////
+// Fim arquivo de contadores acumulados
+//////////////////////////////////////////////////////////////////////

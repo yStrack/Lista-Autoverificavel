@@ -1,0 +1,35 @@
+#if ! defined( TIPOS_ESPACO_ )
+#define TIPOS_ESPACO_
+/***************************************************************************
+*
+*  $MCD Arquivo de defini��o: TiposEspacos.def
+*
+*  Projeto: Automatiza��o de testes
+*  Gestor:  LES/DI/PUC-Rio
+*  Autores: avs
+*
+*  $ED Descri��o do arquivo
+*     Este arquivo declara os identificadores de tipos dos espa�os de dados
+*     a serem utilizados por um determinado construto.
+*     Para facilitar a evolu��o dos construtos, este tipo dever� ser
+*     redefinido sempre que um construto fa�a uso de algum m�dulo
+*     que utilize espa�os de dados din�micos. Para cada m�dulo deve ser
+*     definido um arquivo do g�nero "TiposEspacosXXX.def" e que cont�m
+*     os identificadores dos tipos de espa�o utilizados naquele m�dulo.
+*     estes arquivos devem ser inclu�dos entre o identificador
+*     CED_ID_TIPO_VALOR_NULO  e  CED_ID_TIPO_ILEGAL
+*
+***************************************************************************/
+
+typedef enum
+{
+   CED_ID_TIPO_VALOR_NULO ,
+
+   #include "TiposEspacosLista.def" 
+
+   CED_ID_TIPO_ILEGAL = 999
+} CED_tpIdTipoEspaco ;
+
+/********** Fim do arquivo de defini��o: TiposEspacos.def  **********/
+
+#endif

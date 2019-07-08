@@ -1,0 +1,27 @@
+#if ! defined( TIPOS_LISTA_ )
+#define TIPOS_LISTA_
+/***************************************************************************
+*
+*  $MCD Arquivo de defini��o: TiposEspacosLista.def
+*
+*  Projeto: Automatiza��o de testes
+*  Gestor:  LES/DI/PUC-Rio
+*  Autores: avs
+*           YS - Yuri Strack
+*
+*  $ED Descri��o do arquivo
+*     Este arquivo declara os identificadores de tipos dos espa�os de dados
+*		  utilizados pelo m�dulo lista duplamente encadeada. O m�dulo obedece o
+*     padr�o estabelecido pelo m�dulo CNTESPAC. Ou seja, cont�m uma seq��ncia
+*     de declaradores a serem inclu�dos em um enum. Cada declarador corresponde
+*     a um dos tipos de espa�o de dados.
+*
+***************************************************************************/
+
+      LIS_TipoEspacoCabeca ,
+      LIS_TipoEspacoNo ,
+	  inteiro ,
+
+/********** Fim do arquivo de defini��o: TiposEspacosLista.def  **********/
+
+#endif

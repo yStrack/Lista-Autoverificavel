@@ -1,0 +1,32 @@
+Grupo:
+  -Gabriel Heffer (GH)
+  -Lucas Damo (LD)
+  -Yuri Strack (YS)
+
+Arquivos:
+  Ao extrair o conteúdo do arquivo INF1301-Trab04-GHLDYS.zip, o mesmo apresenta:
+
+  PASTAS:
+    -Fonte: Contém os arquivos .c .h e .lib utilizados no módulo trabalho.
+    - Teste:
+      -Debug: Contém os scripts de teste, o executavel do modo DEBUG (TRAB4-1.exe), arquivos .bat para facilitar
+              a execução, arquivo de definição dos contadores .def .
+      -Release: Contém os scripts de teste, o executavel do modo RELEASE (TRAB4-2.exe) e arquivo .bat para facilitar
+              a execução.
+    - Relatorios: Contém os relatórios dos alunos do grupo.
+
+    ARQUIVOS:
+    -Documentacao.pdf : Contém modelo da lista duplamente autoverificavel, assertivas estruturais e comandos de teste.
+    -LEIAME.txt
+
+Funcionamento:
+  Para executar os testes de cada módulo:
+  -Na pasta ./DEBUG ou ./RELEASE , clique duas vezes com o botão esquerdo do mouse no arquivo
+   TestaTudo.bat. O resultado do teste estará em dois arquivos de saida, um saidaDeturpador.txt e outro saidaVerificador.txt,
+   também são gerados arquivos .count com o valor dos contadores.
+
+  -Caso queira criar um projeto no Visual Studio (VS) com os arquivos fonte de cada módulo do trabalho:
+    1.Criar um novo projeto no VS
+    2.Incluir nele todos os arquivos contido na pasta ./Fontes
+    3.Antes de buildar ir em project->properties->C/C++, em Runtime Library e selecionar "MultiThread Debug" para retirar dependência de dll.
+    4.Buildar o projeto.

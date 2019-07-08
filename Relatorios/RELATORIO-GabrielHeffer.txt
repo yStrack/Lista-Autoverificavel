@@ -1,0 +1,9 @@
+﻿Dia     Tempo     Tipo Tarefa             Descrição
+
+26/06   1h:40m    estudar                 Fazendo exercícios da lista 2.
+30/06   5h:45m    codificar módulo        Correção de erros nos módulos.
+30/06   4h:00m    redigir script de teste Redigir script de teste do módulo Lista( Verificador ) e realizar teste.
+01/07   2h:00m    estudar                 Fazendo exercícios da lista.
+01/07   4h:00m    redigir script de teste Fazendo script de depurador.
+02/07   3h:30m    realizar os teste       Realizar teste de deturpação e correção de erros no deturpador e verificador.
+03/07   3h:30m    diagnosticar e corrigir Corrigimos erros no verificador e Deturpador. Fizemos a documentação do comandos de teste.
